@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Central Institute of School Education</title>
+  <meta content="Central Institute of School Education(cise) is AN ISO 9001: 2015 certified Organization" name="description">
+  <meta content="" name="Central Institute of School Education">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+  <!-- Favicons -->
+  <link href="images/favicon.ico" rel="icon">
+  <link href="images/favicon.ico" rel="apple-touch-icon">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/boxicons.min.css" rel="stylesheet">
+  <link href="css/glightbox.min.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+
+  
+  <link href="css/style.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./css/contact.css"> -->
+  <!-- <script src="./js/contact.js"></script> -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+    header{
+      z-index: 1;
+    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.containerr {
+  position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+  padding: 2rem;
+  /* background-color: #fafafa; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+}
+
+.form {
+  width: 100%;
+  max-width: 820px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+  background-color: #1abc9c;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, transparent 20%, #149279);
+  position: absolute;
+}
+
+.circle.one {
+  width: 130px;
+  height: 130px;
+  top: 130px;
+  right: -40px;
+}
+
+.circle.two {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  right: 30px;
+}
+
+.contact-form:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #1abc9c;
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 5px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #fafafa;
+  font-size: 0.9rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+.btnn {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+  width: 100%;
+}
+
+.btnn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color: #1abc9c;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container span:before {
+  left: 50%;
+}
+
+.input-container span:after {
+  right: 50%;
+}
+
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.8rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-info .title {
+  color: #1abc9c;
+}
+
+.text {
+  color: #333;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+  display: flex;
+  color: #555;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.information i {
+  color: #1ABC9C;
+}
+
+.icon {
+  width: 28px;
+  margin-right: 0.7rem;
+}
+
+.social-media {
+  padding: 2rem 0 0 0;
+}
+
+.social-media p {
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #1abc9c, #149279);
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.05);
+}
+
+.contact-info:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  border: 22px solid #1abc9c;
+  border-radius: 50%;
+  bottom: -77px;
+  right: 50px;
+  opacity: 0.3;
+}
+
+.big-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #1cd4af, #159b80);
+  bottom: 48%;
+  right: 35%;
+  transform: translate(-40%, 38%);
+}
+
+.big-circle:after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  top: calc(50% - 180px);
+  left: calc(50% - 180px);
+}
+
+.square {
+  position: absolute;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(181%, 11%);
+  opacity: 0.2;
+}
+
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-form:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .square {
+    transform: translate(140%, 43%);
+    height: 350px;
+  }
+
+  .big-circle {
+    bottom: 75%;
+    transform: scale(0.9) translate(-40%, 30%);
+    right: 50%;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-media {
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .contact-info:before {
+    display: none;
+  }
+
+  .square,
+  .big-circle {
+    display: none;
+  }
+
+  form,
+  .contact-info {
+    padding: 1.7rem 1.6rem;
+  }
+
+  .text,
+  .information,
+  .social-media p {
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .icon {
+    width: 23px;
+  }
+
+  .input {
+    padding: 0.45rem 1.2rem;
+  }
+
+  .btnn {
+    padding: 0.45rem 1.2rem;
+  }
+}
+
+  </style>
+  
+</head>
+
+<body>
+
+  <!-- ======= start Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i>
+        <a href="mailto:cise@jiier.org">cise@jiier.org</a>
+        <i class="bi bi-envelope-fill" style="margin: 0 0 0 15px;"></i>
+        <a href="mailto:verify@jiier.org"> verify@jiier.org</a>
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="#" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/ciseindian/?ti=as" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/indian-institute-of-open-schooling/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= start Header ======= -->
+  <div class="container  ">
+  <div class="row"><div class="col-md-7 col-10"> <h1 class="m-2 "><a href="https://cise.jiier.org/"><img src="./images/cise_logo.jpg" class="img-fluid"></a></h1>  <i class="bi bi-list mobile-nav-toggle"></i></div> 
+  <div class="col-md-5">
+  <div class="row mt-3">
+     <div class="col-md-6 col-6 px-1">   <a href="student-verification.php" class=" btn btn-sm top_btn-get-started d-flex">Student Verification</a></div>
+     <div class="col-md-6 col-6 px-1">   <a href="center-enquiry.php" class="  btn btn-sm top_btn-get-started d-flex">Branch Verification</a></div>
+      <div class="col-md-6 col-6 px-1">    <a href="center-login.php" class=" btn btn-sm top_btn-get-started d-flex">Student Enquiry</a></div>
+       <div class="col-md-6 col-6 px-1">   <a href="student.php" class="  btn btn-sm top_btn-get-started d-flex">Branch Enquiry</a></div>
+		</div>
+      </div></div></div>
+      <header id="header" class="d-flex   align-items-center">
+   
+        <div class="container d-flex align-items-center">
+    
+         
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="https://cise.jiier.org/" class="logo me-auto"><img src="images/logo.png" alt="" class="img-fluid"></a>-->
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="https://cise.jiier.org/">Home</a></li>
+              <li class="dropdown"><a href="#"><span>About US</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                   <li><a href="./about-us.html">About cise India</a></li>
+              <li><a href="./board-profile.html">Board Profile</a></li>
+              <li><a href="./vision.html">Vision</a></li>
+              <li><a href="./mission.html">Mission</a></li>
+              <li><a href="./aims-objective.html">Aims & Objectives</a></li>
+              <li><a href="">Public Notice</a></li>
+              <li><a href="./accreditation-recognition.html">Accreditation &amp; Recognition</a></li>
+              <li><a href="./quality-policy.html">Quality Policy</a></li>
+              <li><a href="./the-mark-of-excellence..html">The Mark of Excellence</a></li>
+                </ul>
+              </li>
+             <li class="dropdown"><a href="#"><span>Academic</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                             <li><a href="./open-basic-education.html">OPEN BASIC EDUCATION </a></li>
+                        <li><a href="./secondary-education.html">SECONDARY EDUCATION </a></li>
+                        <li><a href="./senior-secondary-education.html">SENIOR SECONDARY EDUCATION </a></li>
+                        </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Admission</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li><a href="./admission.html">Admission</a></li>
+            <li><a href="./pdf/cise capplication.pdf">Application</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Branch</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li> <a href="study-center.php"> Branch Enquiry</a></li>
+              <li> <a href="oversease-center.php"> Branch Verification</a></li>
+              <!-- <li> <a href="center-login.php">Online Apply</a></li> -->
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                   <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./news-event.html">NEWS &amp; EVENTS</a></li>
+                </ul>
+              </li>
+              
+              
+              </li>
+          <li class="dropdown"><a href="#"><span>Download</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                   <li><a href="./admit-card.html">Admit Card</a></li>
+                   <li><a href="./pdf/online_education.pdf">Online Education</a></li>
+    
+            
+                </ul>
+              </li>
+          
+          <li class="dropdown"><a href="#"><span>Usefull Link</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                   <li><a href="https://www.education.gov.in/">MOE</a></li>
+          <li><a href="https://swayam.gov.in/">SWAYAM</a></li>
+          <li><a href="http://ignou.ac.in/">IGNOU</a></li>
+          <li><a href="https://ncert.nic.in/">NCVRT</a></li>
+          <li><a href="https://www.col.org/">COL</a></li>
+          <li><a href="https://www.unesco.org/en">UNESCO</a></li>
+          <li><a href="https://www.du.ac.in/">DU</a></li>
+          <li><a href="https://ycmou.digitaluniversity.ac/">YCMOU</a></li>
+    
+            
+                </ul>
+              </li>
+          <li><a class="nav-link scrollto" href="./contact.html">Contact Us</a></li>
+              
+            </ul>
+           
+          </nav>
+        </div>
+      </header>
+  <!-- End Header --> <style>
+ .carousel-item img{width:100%;height:500px;object-fit: cover;}
+
+ .approvalapplication {
+  text-align: center;
+  padding: 50px 0px;
+}
+.col-md-3.course-box2 {
+  border: solid 1px #cccccc;
+  padding: 28px 38px 51px 38px;
+  text-align: center;
+  height: 200px;
+}
+.course-box2 h4 {
+  margin-bottom: 41px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 27px;
+  margin: 0 0 14px 0;
+}
+.approvalapplication a {
+  color: #333;
+  border: solid 1px #cecece !important;
+  padding: 10px;
+  background-color: #b73437;
+  border-radius: 10px;
+  color: #fff;
+}
+
+ </style>
+
+<section id="cta" class="cta" style="background-image: url(./images/inner-slide.jpg);background-size: cover;">
+  <div class="container">
+  <div class="row aos-init aos-animate" data-aos="zoom-out">
+  <div class="col-lg-12 text-center text-lg-start"><h3>
+    Accreditation & Recognition 
+</h3>
+ <div class="breadcrumbs"> <ol><li><a href="https://cise.jiier.org/">Home</a></li><li>About-us </li></ol></div>
+  </div> </div></div>
+</section>
+
+<section>
+	<div class="container">
+		<!-- Title -->
+		 
+
+		<!-- Tabs START -->
+	 
+		<!-- Tabs END -->
+
+		<!-- Tabs content START -->
+		<div class="tab-content" id="course-pills-tabContent">
+			<!-- Content START -->
+			 <div class="row g-4">
+
+					<!-- Card item START -->
+					
+					<!-- Card item END -->
+ 					<!-- Card item START -->
+					<div class="col-sm-12 col-lg-12 col-xl-12">
+						<div class="card shadow h-100">
+							<!-- Image -->
+							 
+							<div class="card-body pb-0">
+								<!-- Badge and favorite -->
+								
+								<!-- Title -->
+								<h5 class="card-title fw-normal"><a href="#">Central Institute of School Education- GOVT. REGISTRATION</a></h5>
+								<p class="mb-2 text-truncate-2">The Central Institute of School Education was registered. To offer specialized services to the government and other agencies in the field of education, in general, and school education, in particular, for the development and growth of distance and open school system and develop proper curriculum for vocational and enduring education to prepare student population for the world of work. To provide an academic environment that treats each child as a unique individual and develops him/ her to the maximum potential.</p>
+                                <p>CISE Is An Institute affiliated BSS, established in 1952 by Planning Commission, Govt. of India</p>
+								<div class="d-flex justify-content-between mb-2">
+									<a href="./images/certificate_.png" target="_blank" class="badge bg-success bg-opacity-10 text-success">READ MORE CISE  Certificate</a>
+									 
+								</div>
+								<!-- Rating star -->
+								 
+							</div>
+							<!-- Card footer -->
+							 
+						</div>
+					</div>
+					<!-- Card item END -->
+ 					<!-- Card item START -->
+					<div class="col-sm-12 col-lg-12 col-xl-12">
+						<div class="card shadow h-100">
+							<!-- Image -->
+							 
+							<div class="card-body pb-0">
+								<!-- Badge and favorite -->
+								
+								<!-- Title -->
+								<h5 class="card-title fw-normal"><a href="#">AICTE</a></h5>
+								<p class="mb-2 text-truncate-2">Association of International Colleges in Technical Education (AICTE), is responsible for the promotion and coordination of the Open and Distance Learning system in the country.</p>
+								<div class="d-flex justify-content-between mb-2">
+									<a href="./images/aicte.png" target="_blank" class="badge bg-success bg-opacity-10 text-success">READ MORE CISE Certificate</a>
+									 
+								</div>
+								<!-- Rating star -->
+								 
+							</div>
+							<!-- Card footer -->
+							 
+						</div>
+					</div>
+					<!-- Card item END -->
+ 					<!-- Card item START -->
+				
+					<!-- Card item END -->
+				</div>
+			<!-- Content END -->
+
+			<!-- Content START -->
+			
+			<!-- Content END -->
+
+			<!-- Content START -->
+		 
+			<!-- Content END -->
+
+			<!-- Content START -->
+		 
+			<!-- Content END -->
+		</div>
+		<!-- Tabs content END -->
+	</div>
+</section>
+
+<div class="container">
+    <h1>NOTIFICATIONS </h1>
+    <div class="approvalapplication">
+        <div class="row">
+
+            <div class="col-md-3 course-box2">
+                <h4>1.MHRD NOTIFICATION</h4>
+                <a href="./pdf/1. ALLIED HEALTH EDUCATION.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>2.UGC NOTIFICATION</h4>
+                <a href="./pdf/2. AGRICULTURE AND ALLIED TECHNOLOGY.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>3.UGC NOTIFICATION-2</h4>
+                <a href="./pdf/3. AUTOMOBILE SECTOR.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>4.HIGH COURT DECISION RCI REGULATION</h4>
+                <a href="./pdf/4. CHILD EDUCATION.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>5.Communicative &amp; Soft Skills Educations</h4>
+                <a href="./pdf/5. COMMUNICATIVE &amp; SOFT SKILLS EDUCATION.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>6.NATIONAL EDUCATION POLICY 1986</h4>
+                <a href="./pdf/6. DAIRY EDUCATION.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>7.NVE QUALIFICATION ORDER</h4>
+                <a href="./pdf/7. ELECTRICAL &amp; ELECTRONICS SECTOR.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>8.ACCREDITATION FOR HIGHER EDUCATION</h4>
+                <a href="./pdf/8. FISHERY SCIENCE SECTOR.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>9.AIU EVALUATION</h4>
+                <a href="./pdf/9.Home Business Education.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>10.INTERIM REPORT OF THE OVERSIGHT COMMITTEE</h4>
+                <a href="./pdf/10.Interior &amp; Exterior Education.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>11.Office Management Education</h4>
+                <a href="./pdf/11.Office Management Education.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>12.MINORITY EDUCATION</h4>
+                <a href="./pdf/12.Poultry Education.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>13.OPEN SCHOOLING</h4>
+                <a href="./pdf/13.Veterinary Sector.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>14.OPEN SCHOOLING ISSUES & CHALLENGES</h4>
+                <a href="./pdf/14.Health &amp; Paramedical Sector.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>15.QUALITY IN SCHOOL EDUCATION</h4>
+                <a href="./pdf/15.Acupuncture Sector.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>16.VOS-NGOS FOR THE WELFARE OF OBC</h4>
+                <a href="./pdf/16.Aviation Sector.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>17.ASSISTANCE TO VOLUNTARY AGENCIES</h4>
+                <a href="./pdf/17.Ayurveda Sector.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>18.UGC NOTIFICATION</h4>
+                <a href="./pdf/18.Beauty Culture &amp; Spa.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>19.IDMI SCHEME</h4>
+                <a href="./pdf/19.Bio- Technology.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>20.NATIONAL POLICY ON EDUCATION</h4>
+                <a href="./pdf/20.Business School.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>21.RECOGNITION OF CERTIFICATE</h4>
+                <a href="./pdf/21.Computer &amp; Information Technology.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>22.UGC NOTIFICATION FOR ODL DEGREES</h4>
+                <a href="./pdf/22.Fashion &amp; Design Technology.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>23.SCHEME OF VOCATIONALISATION OF SECONDARY EDUCATION</h4>
+                <a href="./pdf/23.Fire and Safety.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>24.LIST OF HOLIDAYS</h4>
+                <a href="./pdf/24.Foresrt &amp; Environment Sector.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>25.RECOGNITION</h4>
+                <a href="./pdf/25.Gold Appraiser, Gem &amp; Jewellery Sector.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>26.PUBLIC NOTICE</h4>
+                <a href="./pdf/26.Geo School.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>27.ATTESTATION</h4>
+                <a href="./pdf/27.Homoeopathy Sector.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>28.BROCHURE</h4>
+                <a href="./pdf/28.Hotel Management &amp; Tourism Sector.pdf">READ MORE</a>
+            </div>
+
+
+
+            <div class="col-md-3 course-box2">
+                <h4>29.QUADRA BAY VERIFICATION</h4>
+                <a href="https://quadrabay.com/">READ MORE</a>
+            </div>
+
+
+
+
+
+
+        
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+       									<!-- <button class="btn btn-outline-warning mb-2 "><b>Visits :</b> <span class="text-white">138739</span></button> -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/centralschooling/" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/centralschooling/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/centralschooling/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.facebook.com/centralschooling/" class="google-plus" target="_blank"><i class="bx bxl-skype"></i></a>
+        <a href="https://www.facebook.com/centralschooling/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span> Central Institute of School Education</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed and Developed by <a href="https://cise.jiier.org/" target="_blank">Central Institute of School Education</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/glightbox.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+<script src="js/purecounter_vanilla.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Validate form inputs
+  var name = document.getElementById('name').value.trim();
+  var phone = document.getElementById('phone').value.trim();
+  var email = document.getElementById('email').value.trim();
+  var message = document.getElementById('message').value.trim();
+
+  var isValid = true;
+
+  // Validate name
+  if (name === '') {
+    document.getElementById('nameError').innerText = 'Name is required';
+    isValid = false;
+  } else {
+    document.getElementById('nameError').innerText = '';
+  }
+
+  // Validate phone number
+  if (phone === '') {
+    document.getElementById('phoneError').innerText = 'Phone number is required';
+    isValid = false;
+  } else {
+    // Simple phone number validation, you can customize according to your requirements
+    var phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(phone)) {
+      document.getElementById('phoneError').innerText = 'Invalid phone number';
+      isValid = false;
+    } else {
+      document.getElementById('phoneError').innerText = '';
+    }
+  }
+
+  // Validate email
+  if (email === '') {
+    document.getElementById('emailError').innerText = 'Email is required';
+    isValid = false;
+  } else {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      document.getElementById('emailError').innerText = 'Invalid email format';
+      isValid = false;
+    } else {
+      document.getElementById('emailError').innerText = '';
+    }
+  }
+
+  // Validate message
+  if (message === '') {
+    document.getElementById('messageError').innerText = 'Message is required';
+    isValid = false;
+  } else {
+    document.getElementById('messageError').innerText = '';
+  }
+
+  if (isValid) {
+    // Construct the mailto link
+    var mailtoLink = 'mailto:youremail@example.com' + '?subject=Contact%20Form&body=Name:%20' + encodeURIComponent(name) + '%0APhone:%20' + encodeURIComponent(phone) + '%0AEmail:%20' + encodeURIComponent(email) + '%0AMessage:%20' + encodeURIComponent(message);
+
+    // Open default email client with prefilled values
+    window.location.href = mailtoLink;
+  }
+});
+
+  </script>
+
+</body>
+
+</html>
